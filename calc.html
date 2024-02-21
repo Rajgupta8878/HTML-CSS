@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+
+</head>
+
+    <body bgcolor="gray">
+   
+        <h1 shaddow="3cm" style="color: darkblue;">Calculator </h1>
+        <input type="text" id="val1">
+        <input type="text" id="val2">
+        <h1 id="demo"></h1>
+
+        <script>
+
+            function fun(){
+                var x= parseFloat(document.getElementById("val1").value);
+                var y= parseFloat(document.getElementById("val2").value);
+
+               let result= x+y;
+               document.getElementById("res").innerHTML=result
+            }
+               function fun1(){
+                var x= parseFloat(document.getElementById("val1").value);
+                var y= parseFloat(document.getElementById("val2").value);
+
+               let result= x-y;
+               document.getElementById("res1").innerHTML=result
+               }
+               function fun2(){
+                var x= parseFloat(document.getElementById("val1").value);
+                var y= parseFloat(document.getElementById("val2").value);
+
+                let result = x/y;
+                document.getElementById("res2").innerHTML=result
+ 
+               
+               } 
+               
+               function fun3(){
+                var x= parseFloat(document.getElementById("val1").value);
+                var y= parseFloat(document.getElementById("val2").value);
+
+                let result = x*y;
+                document.getElementById("res3").innerHTML=result
+ 
+               }
+
+               window.alert("noobs")
+             
+            
+
+
+
+</script>
+
+<h1 id="res" style="color:red" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"> add</h1>
+
+
+<button onclick="fun()">sum</button>
+<br>
+
+<h1 id="res1" style="color:darkgreen" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"> subtract</h1>
+<button onclick="fun1()">sum</button>
+<br>
+<h1 id="res2" style="color: blue;" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"> divide</h1>
+<button onclick="fun2()">sum</button>
+<br>
+<h1 id="res3" style="color:crimson"style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"> Multiply</h1>
+<button onclick="fun3()">sum</button>
+       </body>
+
+</html>
